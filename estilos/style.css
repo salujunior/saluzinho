@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap');
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -7,6 +9,7 @@
 
 html, body {
     color: white;
+    font-family: var(--fonte1);
     height: 100vh;
     width: 100vw;
 
@@ -21,25 +24,36 @@ html, body {
 }
 
 :root {
-    --cor1: #A6FFDD;
-    --cor2: lightskyblue;
-    --cor3: yellow;
+    --cor1: #FDFAFF;
+    --cor2: #E678B8;
+    --cor3: #D52EA2;
+    --cor4: #FFE954;
+    --cor5: #86E5E5;
+
+    --fonte1: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font02: "Nerko One", cursive;
 }
 
 header {
     text-align: center;
     padding: 10px;
     font-size: 0.7em;
-    background-color: lightsalmon;
+    background-color: var(--cor4);
+}
+
+header > h1 {
+    font-family: var(--font02);
+    text-shadow: 1px 1px 1px black;
 }
 
 main {
-    background-color: var(--cor1);
+    background-color: var(--cor5);
 
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 main > h1 {
@@ -51,7 +65,7 @@ main > h1 {
 div {
     flex: 1 1 0;
 
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     margin: 10px auto;
     border-radius: 10px;
     padding: 10px;
@@ -60,9 +74,32 @@ div {
     border: 1px solid #459979;
 }
 
+div:hover {
+    border: 1px solid #D52EA2;
+    background-color: #d52ea33a;
+    transition-duration: 0.9s;
+    transform: translate(-2px, -2px);
+}
+
 div > p {
     font-size: 0.8em;
     margin-left: 20px;
+    margin-top: 20px;
+}
+
+div > p:hover {
+    color: var(--cor3);
+    transition-duration: 0.9s;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+img:hover {
+    filter: drop-shadow(5px 5px 20px var(--cor2));
+    transition-duration: 0.3s;
 }
 
 div > img, p {
@@ -73,10 +110,5 @@ footer {
     padding: 10px;
     margin: 0px;
     font-size: 1em;
-    background-color: lightsalmon;
-}
-
-img {
-    width: 75px;
-    height: 75px;
+    background-color: var(--cor4);
 }
