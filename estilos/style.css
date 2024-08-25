@@ -7,6 +7,11 @@
 
 html, body {
     color: white;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -31,6 +36,7 @@ header {
 main {
     background-color: var(--cor1);
 
+    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -39,40 +45,38 @@ main {
 main > h1 {
     font-size: 0.9em;
     padding: 10px;
-    text-shadow: 1px 1px 1px black;
+    color: black;
 }
 
 div {
+    flex: 1 1 0;
+
     background-color: var(--cor2);
     margin: 10px auto;
     border-radius: 10px;
     padding: 10px;
     width: 300px;
-    height: 200px;
+    height: 100px;
     border: 1px solid #459979;
-}
-
-div:hover {
-    filter: drop-shadow(1px 1px 20px );
-    transition-duration: 0.9s;
-    transform: translate(-2px, -2px);
 }
 
 div > p {
     font-size: 0.8em;
+    margin-left: 20px;
+}
+
+div > img, p {
+    display: inline-block;
 }
 
 footer {
     padding: 10px;
+    margin: 0px;
     font-size: 1em;
     background-color: lightsalmon;
 }
 
 img {
-    width: 100px;
-    height: 100px;
-}
-
-img:hover {
-    filter: drop-shadow(1px 1px 20px yellow)
+    width: 75px;
+    height: 75px;
 }
