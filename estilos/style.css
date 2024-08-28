@@ -3,10 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
+
 
 html, body {
     color: white;
@@ -135,7 +132,7 @@ video {
 footer {
     background-color: var(--cor4);
     font-size: 0.6em;
-    padding: 10px;
+    padding: 20px;
 }
 
 li {
