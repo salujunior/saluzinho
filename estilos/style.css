@@ -53,8 +53,8 @@ main {
     flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
 main > h1 {
@@ -64,7 +64,8 @@ main > h1 {
 }
 
 div {
-    flex: 1 1 0;
+    display: flex;
+    justify-content: space-between;
 
     background-color: var(--cor4);
     margin: 10px auto;
@@ -84,6 +85,16 @@ div:hover {
 
 div > p {
     font-size: 0.8em;
+
+}
+
+div > img {
+    width: 75px;
+    height: 75px;
+}
+
+div > img, p {
+    align-content: center;
 }
 
 div > p:hover {
@@ -91,18 +102,9 @@ div > p:hover {
     transition-duration: 0.9s;
 }
 
-img {
-    width: 75px;
-    height: 75px;
-}
-
 img:hover {
     filter: drop-shadow(5px 5px 20px var(--cor2));
     transition-duration: 0.3s;
-}
-
-div > img, p {
-    display: inline-block;
 }
 
 footer {
